@@ -5,9 +5,7 @@ def nyc_pigeon_organizer(data)
   data.map do |attribute, options|
     options.map do |option, birds|
       birds.each do |bird|
-        binding.pry
-        attribute_str = attribute.to_s
-
+        
         if not(pigeon_list.key?(bird))
           pigeon_list.update(bird => {})
         end
@@ -22,5 +20,6 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
+  binding.pry
   return pigeon_list
 end
