@@ -5,7 +5,7 @@ def nyc_pigeon_organizer(data)
   data.map do |attribute, options|
     options.map do |option, birds|
       birds.each do |bird|
-        
+
         if not(pigeon_list.key?(bird))
           pigeon_list.update(bird => {})
         end
