@@ -7,6 +7,8 @@ def nyc_pigeon_organizer(data)
       birds.each do |bird|
           binding.pry
           pigeon_list[bird][attribute] = option
+        end
+      end
     end
   end
 end
