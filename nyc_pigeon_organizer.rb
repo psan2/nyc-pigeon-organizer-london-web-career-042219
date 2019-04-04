@@ -5,9 +5,8 @@ def nyc_pigeon_organizer(data)
   data.map do |attribute, options|
     options.map do |option, birds|
       birds.each do |bird|
-          binding.pry
-          pigeon_list[bird][attribute] = option
-        end
+        binding.pry
+        pigeon_list[bird][attribute] = option
       end
     end
   end
