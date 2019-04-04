@@ -9,12 +9,12 @@ def nyc_pigeon_organizer(data)
           pigeon_list.update(bird => {})
         end
 
-        if not(pigeon_list[bird].key?(attribute))
-          pigeon_list[bird].update(attribute => [])
+        if not(pigeon_list[bird].key?(attribute.to_s))
+          pigeon_list[bird].update(attribute.to_s => [])
         end
 
-        if not(pigeon_list[bird][attribute].include?(option))
-          pigeon_list[bird][attribute] << option
+        if not(pigeon_list[bird][attribute.to_s].include?(option))
+          pigeon_list[bird][attribute.to_s] << option
         end
       end
     end
