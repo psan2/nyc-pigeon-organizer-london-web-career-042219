@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(data)
         if not(pigeon_list.key?(bird))
           pigeon_list.update(bird => {})
         end
-
+        
         if not(pigeon_list[bird].key?(attribute))
           pigeon_list[bird].update(attribute => [])
         end
@@ -19,5 +19,5 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  return pigeon_list
+  binding.pry
 end
