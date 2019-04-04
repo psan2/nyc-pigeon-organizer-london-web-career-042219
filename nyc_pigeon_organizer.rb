@@ -7,7 +7,7 @@ def nyc_pigeon_organizer(data)
       birds.each do |bird|
         binding.pry
         attribute_str = attribute.to_s
-        
+
         if not(pigeon_list.key?(bird))
           pigeon_list.update(bird => {})
         end
