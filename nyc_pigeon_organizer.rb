@@ -16,8 +16,8 @@ def nyc_pigeon_organizer(data)
           pigeon_list[bird].update(attribute => [])
         end
 
-        if not(pigeon_list[bird][attribute].include?(option))
-          pigeon_list[bird][attribute] << option
+        if not(pigeon_list[bird][attribute].include?(option.to_s))
+          pigeon_list[bird][attribute] << option.to_s
         end
       end
     end
